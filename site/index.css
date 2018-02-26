@@ -1,0 +1,55 @@
+body {
+  font-family: Nunito;
+  color: #ffffff;
+}
+
+a, a:visited {
+  color: #ffffff;
+}
+
+h1 {
+  margin-top: 0.2rem;
+}
+
+.cursive {
+  font-family: 'Parisienne', cursive;
+  color: #ffffff;
+  font-size: 300%;
+  text-shadow: 3px 3px 3px #000000;
+}
+
+.left-bubble, .center-bubble {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.center-bubble {
+  max-width: 600px;
+}
+
+/***** Backgrounds *****/
+
+.background-section {
+  padding: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#section0{
+  background-image: url(./images/Sean-und-Mari.jpg);
+}
+
+#section1{
+  background-image: url(./images/styria.jpg);
+}
+
+#section2{
+  background-image: url(./images/Sean-und-Mari.jpg);
+}
+
+#section3{
+  background-image: url(./images/calgary.jpg);
+}
