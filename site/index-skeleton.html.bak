@@ -1,8 +1,8 @@
 <html>
 <head>
-  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./index-skeleton.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Parisienne|Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sacramento|Nunito" rel="stylesheet">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
@@ -14,32 +14,35 @@
 
 <body>
 
-  <div id="fullpage">
-
   	<div id="section0" class="section background-section">
-      <div class="left-bubble" style="text-align: center; position: absolute; bottom: 1rem; left: 1rem;">
+      <div style="position: absolute; bottom: 0; margin: 0 auto;">
         <p class="cursive">
-          Marianne Bauer
-          <br />
-          and
-          <br />
-          Sean McIntyre
+          We are getting married!
         </p>
-        <p>
-          Will be married on Friday, September 21, 2018
+        <p class="cursive">
+          Friday, September 21, 2018
         </p>
       </div>
     </div>
 
-  	<div id="section1" class="section background-section">
-      <div class="left-bubble">
-        <h1>Location</h1>
+    <div class="leading">
+      <h1>Location</h1>
+    </div>
+
+    <div class="cards">
+      <div id="section2-left">
+        <h2 class="article-title">South Styria</h2>
+        <img class="article-img" src="./images/styria.jpg">
         <p>The wedding will be at <a href="http://melcher.at/en/">Schloss Gamlitz</a> in the south of Austria, nestled in the heart of the Austrian wine country, close to where Marianne is from.</p>
-        <img src="./images/gamlitz2.jpg" style="width: 100%" />
+      </div>
+      <div id="section2-right">
+        <h2 class="article-title">Schloss Gamlitz</h2>
+        <img class="article-img" src="./images/gamlitz2.jpg">
         <p>Schloss Gamlitz is a <a href="https://www.google.com/maps/dir/vienna/Schloss+Gamlitz,+Eckberger+Weinstra%C3%9Fe+32,+8462+Gamlitz,+Austria/@47.462354,14.7264703,8z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x476d079e5136ca9f:0xfdc2e58a51a25b46!2m2!1d16.3738189!2d48.2081743!1m5!1m1!1s0x476fa23fbb6628a7:0xe0d59bf090891b0b!2m2!1d15.553422!2d46.7189863">2.5 hour drive south of Vienna</a>, and <a href="https://www.google.com/maps/dir/Graz,+Austria/Schloss+Gamlitz,+Eckberger+Weinstra%C3%9Fe+32,+8462+Gamlitz,+Austria/@46.8959454,15.2277133,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x476e3587173065bb:0xfe8e8ad1d2dfdd9b!2m2!1d15.439504!2d47.070714!1m5!1m1!1s0x476fa23fbb6628a7:0xe0d59bf090891b0b!2m2!1d15.553422!2d46.7189863">30 minutes away from Graz</a>.</p>
       </div>
     </div>
 
+<!--
   	<div id="section2" class="section background-section">
       <div class="center-bubble">
         <h1>Where To Stay</h1>
@@ -71,7 +74,7 @@
   <script>
     $(document).ready(function() {
     	$('#fullpage').fullpage({
-        autoScrolling: false,
+        // autoScrolling: false,
         verticalCentered: false,
         anchors: [
           '#home',
@@ -90,7 +93,7 @@
       });
     });
   </script>
-
+-->
 </body>
 
 </html>
