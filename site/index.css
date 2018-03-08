@@ -1,5 +1,9 @@
 body {
   font-family: Nunito;
+  font-size: 12pt;
+}
+
+body {
   color: #000000;
   padding: 0;
   margin: 0;
@@ -13,43 +17,41 @@ a, a:visited {
 }
 
 h1 {
+  margin-top: 0.2rem;
+  font-size: 2.3rem;
+  font-weight: 800;
+  font-family: 'Josefin Slab', serif;
 }
 
 h2 {
   font-family: 'Josefin Slab', 'Sacramento', serif;
 }
 
-h1 {
-  margin-top: 0.2rem;
-  font-size: 230%;
-  font-weight: 800;
-  font-family: 'Josefin Slab', serif;
-}
-
 .cursive {
   font-family: 'Sacramento', cursive;
   color: #ffffff;
-  font-size: 500%;
+  font-size: 5rem;
   text-shadow: 3px 3px 3px #000000;
 }
 
-.smaller-text {
-  font-size: 300%;
+.cursive-smaller-text {
+  font-size: 3rem;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* grid-template-columns: minmax(500px, 1fr) minmax(500px, 1fr); */
   grid-gap: 30px;
+}
+
+.card {
+  /* position: relative; */
 }
 
 .card-img {
   width: 100%;
   border-radius: 5px;
-}
-
-.card-title {
-  color: #000000;
 }
 
 .bubble {
@@ -64,6 +66,19 @@ h1 {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   padding: 1rem;
+}
+
+
+
+.section {
+
+}
+
+.text-section {
+  max-width: 960px;
+  margin: 6rem auto;
+  /* margin-top: 6rem;
+  margin-bottom: 6rem; */
 }
 
 #section0 {
@@ -86,10 +101,6 @@ h1 {
 }
 
 #section1 {
-  max-width: 960px;
-  margin: 0 auto 30px;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 #section2 {
@@ -103,11 +114,6 @@ h1 {
 }
 
 #section3 {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 #section4 {
@@ -121,11 +127,6 @@ h1 {
 }
 
 #section5 {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 #footer {
@@ -140,8 +141,85 @@ h1 {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 768px) {
+
+@media(max-width: 980px) {
   body {
-    font-size: 100%;
+    font-size: 16pt;
+  }
+
+  /* p,
+  h1,
+  h2,
+  h3,
+  div {
+font-size: 16pt;
+  } */
+
+  .cursive {
+    font-size: 8rem;
+  }
+
+  .cursive-smaller-text {
+    font-size: 5rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .text-section {
+    margin: 8rem 4rem;
+  }
+
+  .bubble {
+    width: auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .bubble p {
+    font-size: 2rem;
+  }
+
+  #section2 {
+    background-position: -1000px 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+
+  #section2 {
+    position: relative;
+  }
+
+  #section2-text-overlay {
+    position: absolute;
+    bottom: 4rem;
+    margin: 0 2rem;
+    left: 0;
+    right: 0;
+  }
+
+  #section4 {
+    position: relative;
+    background-position: -850px 0;
+  }
+
+  #section4-text-overlay {
+    position: absolute;
+    bottom: 4rem;
+    margin: 0 2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
