@@ -37,6 +37,7 @@ jobs:
       - run:
           name: deploy
           command: |
+            . venv/bin/activate
             ./deploy.sh
 
       - save_cache:
