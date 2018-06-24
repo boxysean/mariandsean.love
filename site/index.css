@@ -201,7 +201,7 @@ font-size: 16pt;
 
   #section2-text-overlay {
     position: absolute;
-    top: 2rem;
+    bottom: 4rem;
     margin: 0 2rem;
     left: 0;
     right: 0;
@@ -222,7 +222,7 @@ font-size: 16pt;
 
   #section4-text-overlay {
     position: absolute;
-    top: 2rem;
+    bottom: 4rem;
     margin: 0 2rem;
     left: 0;
     right: 0;
