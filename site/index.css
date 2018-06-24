@@ -165,6 +165,7 @@ font-size: 16pt;
 
   h1 {
     font-size: 5rem;
+    line-height: 1.2;
   }
 
   h2 {
@@ -185,12 +186,8 @@ font-size: 16pt;
     background-color: rgba(255, 255, 255, 0.8);
   }
 
-  p {
+  p, ul {
     font-size: 2.3rem;
-  }
-
-  #section2 {
-    background-position: -1000px 0;
   }
 
   .cards {
@@ -199,14 +196,23 @@ font-size: 16pt;
 
   #section2 {
     position: relative;
+    background-position: -1000px 0;
   }
 
   #section2-text-overlay {
     position: absolute;
-    bottom: 4rem;
+    top: 2rem;
     margin: 0 2rem;
     left: 0;
     right: 0;
+  }
+
+  /* The schedule section is really packed! */
+  #section2 h1, #section2 h3, #section2 p, #section2 ul {
+    margin-top: 1rem;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   #section4 {
@@ -216,10 +222,14 @@ font-size: 16pt;
 
   #section4-text-overlay {
     position: absolute;
-    bottom: 4rem;
+    top: 2rem;
     margin: 0 2rem;
     left: 0;
     right: 0;
-    text-align: center;
+  }
+
+  #section4 h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
